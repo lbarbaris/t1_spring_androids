@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: restAndroidApp
+  kafka:
+    bootstrap-servers: localhost:9092
+server:
+  port: 8080
+topic:
+  name: log_topic
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
